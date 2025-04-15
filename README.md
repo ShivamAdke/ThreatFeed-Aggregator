@@ -44,7 +44,7 @@ Real-time alerts delivered directly to your security Discord channel.
 ##  Project Structure
 
 ThreatFeed-Aggregator/
-├── app/
+├── app/...
 │   ├── __init__.py              # Package initializer
 │   ├── collector.py             # Fetches OTX threat indicators
 │   ├── db.py                    # SQLite database operations
