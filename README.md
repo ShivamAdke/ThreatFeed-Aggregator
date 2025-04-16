@@ -85,18 +85,12 @@ source venv/bin/activate  # macOS/Linux
 ---
 
 ### 3. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ---
 
 ### 4. Run the application
-bash
-Copy
-Edit
-python run.py
+```python run.py```
 
 Then open your browser at:
 📍 http://127.0.0.1:5000/
