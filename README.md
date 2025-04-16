@@ -42,11 +42,6 @@ Real-time alerts delivered directly to your security Discord channel.
 ---
 
 ##  Project Structure
-
-##  Project Structure
-
-
-
 ```
 ThreatFeed-Aggregator/
 ├── app/ # Application logic
