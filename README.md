@@ -16,16 +16,17 @@ A simple, open-source **Threat Intelligence Aggregator** built for cybersecurity
 
 ##  Screenshots
 
-###  Web Dashboard
+###  Web Dashboard  
 View recent indicators of compromise from OTX in a live dashboard.
+
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-###  Discord Alerts
+###  Discord Alerts  
 Real-time alerts delivered directly to your security Discord channel.
-![Discord Alerts](screenshots/discord_alerts.png)
 
+![Discord Alerts](screenshots/discord_alerts.png)
 
 ---
 
@@ -36,73 +37,80 @@ Real-time alerts delivered directly to your security Discord channel.
 - **SQLite**
 - **OTX API**
 - **Discord Webhook**
-- **dotenv**
+- **python-dotenv**
 
 ---
 
 ##  Project Structure
-
+```
 ThreatFeed-Aggregator/
-├── app/
-│   ├── __init__.py              # Package initializer
-│   ├── collector.py             # Fetches OTX threat indicators
-│   ├── db.py                    # SQLite database operations
-│   ├── notifier.py              # Sends alerts to Discord
-│   └── routes.py                # Flask routes for dashboard
-│
-├── templates/
-│   └── dashboard.html           # Web UI HTML template
-│
-├── static/
-│   └── style.css                # Optional styling (CSS)
-│
-├── .env                         # Environment variables (API keys)
-├── run.py                       # Main entry point of the Flask app
-├── requirements.txt             # List of Python dependencies
-└── README.md                    # Project documentation
-├── screenshots/
-│   ├── dashboard.png           # Screenshot of your Flask dashboard
-│   └── discord_alerts.png      # Screenshot of Discord alerts
+├── app/ # Application logic
+│ ├── init.py # Package initializer
+│ ├── collector.py # Fetches OTX threat indicators
+│ ├── db.py # SQLite database operations
+│ ├── notifier.py # Sends alerts to Discord
+│ └── routes.py # Flask routes for dashboard
+│ ├── templates/
+│ └── dashboard.html # Web UI HTML template
+│ ├── static/
+│ └── style.css # Optional styling (CSS)
+│ ├── .env # Environment variables (API keys)
+├── run.py # Main entry point of the Flask app
+├── requirements.txt # List of Python dependencies
+├── README.md # Project documentation
+└── screenshots/
+├── dashboard.png # Screenshot of your Flask dashboard
+└── discord_alerts.png # Screenshot of Discord alerts
+```
 
+##  Getting Started
 
-Getting Started
-1. Clone the repo:
-bash
-Copy
-Edit
+### 1. Clone the repo
+
 git clone https://github.com/ShivamAdke/ThreatFeed-Aggregator.git
 cd ThreatFeed-Aggregator
-2. Set up a virtual environment:
-bash
-Copy
-Edit
+
+---
+
+### 2. Set up a virtual environment
+
 python -m venv venv
 venv\Scripts\activate  # Windows
+
+---
+
 # OR
-source venv/bin/activate  # Mac/Linux
-3. Install dependencies:
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4. Run the application:
-bash
-Copy
-Edit
-python run.py
+source venv/bin/activate  # macOS/Linux
+
+---
+
+### 3. Install dependencies
+```pip install -r requirements.txt```
+
+---
+
+### 4. Run the application
+```python run.py```
+
 Then open your browser at:
 📍 http://127.0.0.1:5000/
 
- APIs Used
-🔹 AlienVault OTX
-API Docs
+---
 
-Used to pull subscribed pulses and extract indicators
+### APIs Used
+AlienVault OTX
+Used to pull subscribed pulse indicators
 
-🔹 Discord Webhooks
-Used to send notifications to your security alert channel
+OTX API Documentation
 
- Future Ideas (Coming Soon)
+---
+
+### Discord Webhook
+Used to send real-time alerts to a Discord channel
+
+---
+
+### Future Ideas (Coming Soon)
  Add AbuseIPDB IP feed
 
  Export IOCs as CSV
@@ -111,27 +119,32 @@ Used to send notifications to your security alert channel
 
  Add basic IOC validation (IP vs URL)
 
- Cronjob / scheduler for periodic updates
+ Add cronjob/scheduler for periodic updates
 
- Contributing
-Contributions, pull requests, and stars ⭐ are always welcome!
+---
+
+### Contributing
+Contributions, pull requests, and stars  are always welcome!
 
 If you'd like to:
 
-Add new data feeds
+Add new threat feed integrations
 
-Improve dashboard UI
+Improve the dashboard UI
 
-Add alert filtering or enrichments
+Add filtering, exporting, or enrichments
 
-Open an issue or PR!
+Feel free to open an issue or a pull request.
 
- License
+---
+
+### License
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it.
 
- Author
-Shivam Adke
- Cybersecurity Analyst | Threat Hunter | Python Dev
- GitHub: @shivamadke
+---
 
+### Author
+Shivam Adke
+ Cybersecurity Analyst | Threat Hunter | Python Security Tools
+ GitHub: @shivamadke
