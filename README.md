@@ -47,7 +47,10 @@ Real-time alerts delivered directly to your security Discord channel.
 
 
 
-```ThreatFeed-Aggregator/ ├── app/ # Application logic │ ├── init.py # Package initializer │ ├── collector.py # Fetches OTX threat indicators │ ├── db.py # SQLite database operations │ ├── notifier.py # Sends alerts to Discord │ └── routes.py # Flask routes for dashboard │ ├── templates/ │ └── dashboard.html # Web UI HTML template │ ├── static/ │ └── style.css # Optional styling (CSS) │ ├── .env # Environment variables (API keys) ├── run.py # Main entry point of the Flask app ├── requirements.txt # List of Python dependencies ├── README.md # Project documentation └── screenshots/ ├── dashboard.png # Screenshot of your Flask dashboard └── discord_alerts.png # Screenshot of Discord alerts```
+```
+ThreatFeed-Aggregator/ ├── app/ # Application logic │ ├── init.py # Package initializer │ ├── collector.py # Fetches OTX threat indicators │ ├── db.py # SQLite database operations │ ├── notifier.py # Sends alerts to Discord │ └── routes.py # Flask routes for dashboard │ ├── templates/ │ └── dashboard.html # Web UI HTML template │ ├── static/ │ └── style.css # Optional styling (CSS) │ ├── .env # Environment variables (API keys) ├── run.py # Main entry point of the Flask app ├── requirements.txt # List of Python dependencies ├── README.md # Project documentation └── screenshots/ ├── dashboard.png # Screenshot of your Flask dashboard └── discord_alerts.png # Screenshot of Discord alerts
+
+```
 
 ---
 
